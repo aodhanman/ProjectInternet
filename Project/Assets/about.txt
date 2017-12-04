@@ -1,0 +1,2 @@
+about
+this is a text file that will tell the user wha tthe app is about

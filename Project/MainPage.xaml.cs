@@ -26,5 +26,42 @@ namespace Project
         {
             this.InitializeComponent();
         }
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            // save the value of the check button
+            RadioButton current = (RadioButton)sender;
+
+            // save the tag value as the setting
+            // access the data container called LocalSettings
+
+            Windows.Storage.ApplicationDataContainer localSettings
+                = Windows.Storage.ApplicationData.Current.LocalSettings;
+
+            // within the container, save the name value pair of interest
+            //localSettings.Values["nameOfSetting"] = "valueOfSetting";
+            localSettings.Values["userChoice"] = current.Tag.ToString();
+            // over writes any existing value of userChoice
+
+            // just save the highest score a user got
+            // need to check that value already stored.
+            int newHighScore = 101;
+            try
+            {
+                int temp = Convert.ToInt32(localSettings.Values["highScore"]);
+                if (temp < newHighScore)
+                {
+                    localSettings.Values["highScore"] = newHighScore.ToString();
+                }
+            }
+            catch
+            {
+                // doesn't exist, just set the value
+                localSettings.Values["highScore"] = newHighScore.ToString();
+            }
+
+
+
+
+        }
     }
 }
