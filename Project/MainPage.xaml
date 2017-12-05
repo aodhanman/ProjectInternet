@@ -20,7 +20,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Pivot x:Name="firstPivot" Title="Cryptocurrency" Grid.Row="1" Grid.ColumnSpan="3">
+        <Pivot x:Name="firstPivot" Title="Cryptocurrency Info" Grid.Row="1" Grid.ColumnSpan="3">
             
             <PivotItem Header="Converter">
                 <TextBlock Text="This is where you convert"/>
