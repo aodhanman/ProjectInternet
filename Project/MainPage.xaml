@@ -45,23 +45,25 @@
                         <RowDefinition Height="1*"/>
 
                     </Grid.RowDefinitions>
-                    
-                <TextBox Text ="Enter value here" Width="100" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="1" Text="Amount to convert" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="1" Text="Result of conversion" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
-                    <RadioButton Content="Bitcoin" GroupName="currency1" Tag="btc" Checked="RadioButton_Checked" Grid.Column="1" Grid.Row="1"/>
-                    <RadioButton Content="Ethereum" GroupName="currency1" Tag="eth" Checked="RadioButton_Checked" Grid.Column="1" Grid.Row="2"/>
-                    <RadioButton Content="Iota" GroupName="currency1" Tag="iota" Checked="RadioButton_Checked" Grid.Column="1" Grid.Row="3"/>
-                    <RadioButton Content="Dollars" GroupName="currency1" Tag="usd" Checked="RadioButton_Checked" Grid.Column="1" Grid.Row="4"/>
+                    <TextBox Name="value" Text ="" Width="100" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
-                    <RadioButton Content="Bitcoin" GroupName="currency2" Tag="btc2" Checked="RadioButton_Checked" Grid.Column="2" Grid.Row="1"/>
-                    <RadioButton Content="Ethereum" GroupName="currency2" Tag="eth2" Checked="RadioButton_Checked" Grid.Column="2" Grid.Row="2"/>
-                    <RadioButton Content="Iota" GroupName="currency2" Tag="iota2" Checked="RadioButton_Checked" Grid.Column="2" Grid.Row="3"/>
-                    <RadioButton Content="Dollars" GroupName="currency2" Tag="usd2" Checked="RadioButton_Checked" Grid.Column="2" Grid.Row="4"/>
+                    <RadioButton Content="Bitcoin" HorizontalAlignment="Center" GroupName="currency1" Name="btc" Checked="RadioButton_Checked" Grid.Column="1" Grid.Row="1"/>
+                    <RadioButton Content="Ethereum" HorizontalAlignment="Center" GroupName="currency1" Name="eth" Checked="RadioButton_Checked" Grid.Column="1" Grid.Row="2"/>
+                    <RadioButton Content="Iota" HorizontalAlignment="Center"  GroupName="currency1" Name="iota" Checked="RadioButton_Checked" Grid.Column="1" Grid.Row="3"/>
+                    <RadioButton Content="Dollars" HorizontalAlignment="Center"  GroupName="currency1" Name="usd" Checked="RadioButton_Checked" Grid.Column="1" Grid.Row="4"/>
 
-                    <TextBox Text ="result" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3" />
-                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="30,30,30,30" Grid.RowSpan="1" Text="Currency to convert" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Margin="30,30,30,30" Grid.RowSpan="1" Text="Currency converted to" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                    <Button Content="Convert" Grid.ColumnSpan="4" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center"/>
+                    <RadioButton Content="Bitcoin" HorizontalAlignment="Center"  GroupName="currency2" Name="btc2" Checked="RadioButton_Checked" Grid.Column="2" Grid.Row="1"/>
+                    <RadioButton Content="Ethereum"  HorizontalAlignment="Center" GroupName="currency2" Name="eth2" Checked="RadioButton_Checked" Grid.Column="2" Grid.Row="2"/>
+                    <RadioButton Content="Iota"  HorizontalAlignment="Center" GroupName="currency2" Name="iota2" Checked="RadioButton_Checked" Grid.Column="2" Grid.Row="3"/>
+                    <RadioButton Content="Dollars"  HorizontalAlignment="Center" GroupName="currency2" Name="usd2" Checked="RadioButton_Checked" Grid.Column="2" Grid.Row="4"/>
+
+                    <TextBox Name="result" Text ="" Width="100"  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3" />
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="1" Text="Currency to convert" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="1" Text="Currency converted to" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                    <Button Content="Convert" Grid.ColumnSpan="4" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Click="Convert"/>
 
                 </Grid>
             </PivotItem>

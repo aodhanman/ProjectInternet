@@ -27,6 +27,8 @@ namespace Project
         public MainPage()
         {
             this.InitializeComponent();
+
+
         }
 
         public double dollar =1;
@@ -34,48 +36,18 @@ namespace Project
         public double bitcoinPrice = 1700;
         public double ethereumPrice = 450;
         public double iotaPrice = 4.20;
+
+        public double value1 = 0;
+        public double result1 = 0;
         
 
         
 
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            // save the value of the check button
-            RadioButton current = (RadioButton)sender;
-
-            // save the tag value as the setting
-            // access the data container called LocalSettings
-
-            Windows.Storage.ApplicationDataContainer localSettings
-                = Windows.Storage.ApplicationData.Current.LocalSettings;
-
-            // within the container, save the name value pair of interest
-            //localSettings.Values["nameOfSetting"] = "valueOfSetting";
-            localSettings.Values["userChoice"] = current.Tag.ToString();
-            // over writes any existing value of userChoice
-
-            // just save the highest score a user got
-            // need to check that value already stored.
-            int newHighScore = 101;
-            try
-            {
-                int temp = Convert.ToInt32(localSettings.Values["highScore"]);
-                if (temp < newHighScore)
-                {
-                    localSettings.Values["highScore"] = newHighScore.ToString();
-                }
-            }
-            catch
-            {
-                // doesn't exist, just set the value
-                localSettings.Values["highScore"] = newHighScore.ToString();
-            }
+      
 
 
-
-
-        }
+       
         
 
         private void updateClick(object sender, RoutedEventArgs e)
@@ -84,6 +56,21 @@ namespace Project
             HtmlAgilityPack.HtmlWeb web = new HtmlAgilityPack.HtmlWeb();
             HtmlAgilityPack.HtmlDocument doc = web.Load("https://coinmarketcap.com/");
         }
+        private void Convert(object sender, RoutedEventArgs e)
+        {
+            if (value.Text != null)
+            {
+                value1 = double.Parse(value.Text);
+            }
+            else
+            {
+               result.Text = "Error";
+            }
+            
+
+           
+        }
+
 
         private void Red_Click(object sender, RoutedEventArgs e)
         {
