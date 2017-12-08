@@ -110,9 +110,9 @@
         
 
 
-        <TextBlock Grid.ColumnSpan="1" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="4" Text="Bitcoin = $17100" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock Grid.ColumnSpan="1" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="4" Text="Ethereum = $456" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBlock Grid.ColumnSpan="1" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="4" Text="Iota = $4" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Top"  Grid.Column="2"/>
+        <TextBlock Grid.ColumnSpan="1" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="4" Text="Bitcoin = $17000" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Grid.ColumnSpan="1" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="4" Text="Ethereum = $450" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock Grid.ColumnSpan="1" HorizontalAlignment="Center" Margin="30,30,30,30" Grid.RowSpan="4" Text="Iota = $4.20" FontSize="24" TextWrapping="Wrap" VerticalAlignment="Top"  Grid.Column="2"/>
 
            
         

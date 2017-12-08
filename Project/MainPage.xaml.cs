@@ -124,7 +124,7 @@ namespace Project
                result.Text = "Error";
             }
 
-            result1 = (value1 * currency1 * currency2);
+            result1 = (value1 * (currency1 / currency2));
             result.Text = result1.ToString("0.00");
 
 
