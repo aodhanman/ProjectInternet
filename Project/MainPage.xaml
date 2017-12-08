@@ -20,7 +20,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height=".5*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height=".5*"/>
+            <RowDefinition Height=".2*"/>
         </Grid.RowDefinitions>
         
         <Button Name ="buttonUpdate" Content="Update" Click="updateClick" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center"/>
