@@ -84,7 +84,32 @@ namespace Project
                         currency1 = iotaPrice;
                         break;
                 }
-                result1 = currency1;
+
+            }
+        }
+        private void CRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+
+            if (rb != null)
+            {
+                string currName = rb.Tag.ToString();
+                switch (currName)
+                {
+                    case "usd2":
+                        currency2 = dollar;
+                        break;
+                    case "btc2":
+                        currency2 = bitcoinPrice;
+                        break;
+                    case "eth2":
+                        currency2 = ethereumPrice;
+                        break;
+                    case "iota2":
+                        currency2 = iotaPrice;
+                        break;
+                }
+
             }
         }
 
@@ -99,49 +124,51 @@ namespace Project
                result.Text = "Error";
             }
 
-
-
-
-          /*  if (usd.IsChecked == true)
-            {
-                currency1 = dollar;
-            }
-
-            else if (btc.IsChecked == true)
-            {
-                currency1 = bitcoinPrice;
-            }else if (eth.IsChecked == true)
-            {
-                currency1 = ethereumPrice;
-            }
-            else if (iota.IsChecked == true)
-            {
-                currency1 = iotaPrice;
-            }
-
-            if (usd2.IsChecked == true)
-            {
-                currency2 = dollar;
-            }
-
-            else if (btc2.IsChecked == true)
-            {
-                currency2 = bitcoinPrice;
-            }
-            else if ((bool)eth2.IsChecked == true)
-            {
-                currency2 = ethereumPrice;
-            }
-            else if ((bool)iota2.IsChecked == true)
-            {
-                currency2 = iotaPrice;
-            }
-            */
-
-
             result1 = (value1 * currency1 * currency2);
+            result.Text = result1.ToString("0.00");
 
-            result.Text = result1.ToString("0.000000");
+
+
+
+            /*  if (usd.IsChecked == true)
+              {
+                  currency1 = dollar;
+              }
+
+              else if (btc.IsChecked == true)
+              {
+                  currency1 = bitcoinPrice;
+              }else if (eth.IsChecked == true)
+              {
+                  currency1 = ethereumPrice;
+              }
+              else if (iota.IsChecked == true)
+              {
+                  currency1 = iotaPrice;
+              }
+
+              if (usd2.IsChecked == true)
+              {
+                  currency2 = dollar;
+              }
+
+              else if (btc2.IsChecked == true)
+              {
+                  currency2 = bitcoinPrice;
+              }
+              else if ((bool)eth2.IsChecked == true)
+              {
+                  currency2 = ethereumPrice;
+              }
+              else if ((bool)iota2.IsChecked == true)
+              {
+                  currency2 = iotaPrice;
+              }
+              */
+
+
+            //result1 = (value1 * currency1 * currency2);
+
 
 
 
