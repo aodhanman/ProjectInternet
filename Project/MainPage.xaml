@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
 
-    <Grid Background="AliceBlue">
+    <Grid Name="mainGrid" Background="AliceBlue">
         
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -91,12 +91,12 @@
 
                     </Grid.RowDefinitions>
                     <TextBlock  Text="Change background colour"/>
-                    <Button Content="Blue" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
-                    <Button Content="Red" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Click="Button_Click"/>
-                    <Button Content="LightBlue" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"/>
-                    <Button Content="Green" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
-                    <Button Content="Yellow" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center"/>
-                    <Button Content="LightBlue" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center"/>
+                    <Button Name="blue" Content="Blue" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Click="Blue_Click"/>
+                    <Button Name="red" Content="Red" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Click="Red_Click"/>
+                    <Button Name="cyan" Content="Cyan" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Click="Cyan_Click"/>
+                    <Button Name="green" Content="Green" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Click="Green_Click"/>
+                    <Button Name="yellow" Content="Yellow" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" Click="Yellow_Click"/>
+                    <Button Name="lightBlue" Content="LightBlue" Grid.ColumnSpan="1" Background="CadetBlue" FontSize="28" FontStretch="Expanded" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Click="LightBlue_Click"/>
                
                 </Grid>
 

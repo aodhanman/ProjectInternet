@@ -29,6 +29,13 @@ namespace Project
             this.InitializeComponent();
         }
 
+        public double dollar =1;
+
+        public double bitcoinPrice = 1700;
+        public double ethereumPrice = 450;
+        public double iotaPrice = 4.20;
+        
+
         
 
 
@@ -78,9 +85,29 @@ namespace Project
             HtmlAgilityPack.HtmlDocument doc = web.Load("https://coinmarketcap.com/");
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Red_Click(object sender, RoutedEventArgs e)
         {
-            Background = new SolidColorBrush(color
+            mainGrid.Background = new SolidColorBrush(Colors.Red);
+        }
+        private void Blue_Click(object sender, RoutedEventArgs e)
+        {
+            mainGrid.Background = new SolidColorBrush(Colors.Blue);
+        }
+        private void Green_Click(object sender, RoutedEventArgs e)
+        {
+            mainGrid.Background = new SolidColorBrush(Colors.Green);
+        }
+        private void Cyan_Click(object sender, RoutedEventArgs e)
+        {
+            mainGrid.Background = new SolidColorBrush(Colors.Cyan);
+        }
+        private void Yellow_Click(object sender, RoutedEventArgs e)
+        {
+            mainGrid.Background = new SolidColorBrush(Colors.Yellow);
+        }
+        private void LightBlue_Click(object sender, RoutedEventArgs e)
+        {
+            mainGrid.Background = new SolidColorBrush(Colors.AliceBlue);
         }
     }
 }
