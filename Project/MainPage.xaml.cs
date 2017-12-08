@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,10 +23,15 @@ namespace Project
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
         }
+
+        
+
+
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
             // save the value of the check button
@@ -62,6 +68,19 @@ namespace Project
 
 
 
+        }
+        
+
+        private void updateClick(object sender, RoutedEventArgs e)
+        {
+            //Button updateBut = (Button)sender;
+            HtmlAgilityPack.HtmlWeb web = new HtmlAgilityPack.HtmlWeb();
+            HtmlAgilityPack.HtmlDocument doc = web.Load("https://coinmarketcap.com/");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Background = new SolidColorBrush(color
         }
     }
 }
